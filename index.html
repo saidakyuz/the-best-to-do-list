@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
@@ -13,7 +14,6 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-      
             <div class="collapse navbar-collapse" id="navbarsExample02">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
@@ -28,33 +28,83 @@
               </form>
             </div>
           </nav>
-
     </nav>
-    
+
     <main>
-        <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-            <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-              <div class="my-3 p-3">
-                <h2 class="display-5">Another headline</h2>
-                <p class="lead">And an even wittier subheading.</p>
-              </div>
-              <div class="bg-dark box-shadow mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-            </div>
-            <div class="bg-primary mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-              <div class="my-3 py-3">
-                <h2 class="display-5">Another headline</h2>
-                <p class="lead">And an even wittier subheading.</p>
-              </div>
-              <div class="bg-light box-shadow mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">ToDo - List</h5>
+              <p class="card-text">
+                <ul class="container list-group" id="todo">
+                  <li class="row list-group-item d-flex justify-content-between align-items-center">
+
+                    <div class="col task">dummy1</div>
+                    <div class="visually-hidden description">Der dummy1 der ist so dum, denn er weiß nicht warum, warum er überhaubt macht bum bum</div>
+                  </li>
+                  <li class="row list-group-item d-flex justify-content-between align-items-center">
+
+                    <div class="col task">dummy2</div>
+                    <div class="visually-hidden description">Der dummy2 der ist so dum, denn er weiß nicht warum, warum er überhaubt macht bum bum</div>
+                  </li>
+                  <li class="row list-group-item d-flex justify-content-between align-items-center">
+
+                    <div class="col task">go with my dog for a hugh walk</div>
+                    <div class="visually-hidden description">First to the lake, than to the hill and finally dog plays with its friends on the field</div>
+                  </li>
+                </ul>
+              </p>
+              <a href="#" id="add" class="btn btn-primary">Add Task</a>
             </div>
           </div>
+        </div>
+        <div id="create" class="col-sm-6 visually-hidden">
+          <div class="card">
+            <form class="card-body">
+              <h5 class="card-title">Details</h5>
+              <p class="card-text">
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">Task</label>
+                  <input type="text" class="form-control task" name="task" placeholder="Short description task">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label">Description</label>
+                  <textarea class="form-control description" name="description"rows="3" placeholder="Add a detailed description"></textarea>
+                </div>
+              </p>
+              <button type="submit" id="store" class="btn btn-primary">Save</button>
+            </form>
+          </div>
+        </div>
 
+        <div class="col-sm-6" id="details">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Details</h5>
+              <p class="card-text">
+                <div class="mb-3">
+                  <h5 class="form-label">Task</h5>
+                  <p id="detail_task"></p>
+                </div>
+                <div class="mb-3">
+                  <h5 class="form-label">Description</h5>
+                  <p id="detail_description"></p>
+                </div>
+              </p>
+              <button type="submit" id="save" class="btn btn-primary">Edit</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
 
     </main>
 
     <footer>
 
     </footer>
+    <script src="js/app.js"></script>
 </body>
 
 </html>

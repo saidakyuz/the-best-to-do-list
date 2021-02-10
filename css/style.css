@@ -1,0 +1,9 @@
+.done{
+  text-decoration: line-through;
+  background-color: grey;
+}
+
+.selected{
+  color: red;
+  font-weight: bold;
+}
