@@ -11,30 +11,43 @@
 </head>
 <div id="myDIV" class="header">
     <h2>My To Do List</h2>
-    <input type="text" id="myInput" placeholder="Title...">
+    <input type="text" id="myInputText" placeholder="Title...">
+    <span onclick="newElement()" class="addBtn">Add List</span>
+    <h2>My To Do List</h2>
+    <input type="text" id="myInputBody" placeholder="Title...">
     <span onclick="newElement()" class="addBtn">Add List</span>
 </div>
 
-<ul id="myUL">
-    <li class=>Go to Supemarket
-        <button type="button" class="btn btn-secondary btn-sm">delete</button>
-        </div>
-    </li>
-    <li>Organize the Apartment
-        <button type="button" class="btn btn-secondary btn-sm">delete</button>
-    </li>
-    <li>Go to Running
-        <button type="button" class="btn btn-secondary btn-sm">delete</button>
-    </li>
-    <li>Read a book
-        <button type="button" class="btn btn-secondary btn-sm">delete</button>
-    </li>
-</ul>
+
+<div class="container col-6">
+    <ul id="todos">
+        <li>
+            <h4>Go to Supemarket</h4>
+            <!--<button type="button" class="btn btn-secondary btn-sm">Go to Supemarket</button>-->
+        </li>
+        <li>
+            <h4>Organize the Apartment</h4>
+            <!-- <button type="button" class="btn btn-secondary btn-sm">delete</button> -->
+        </li>
+        <li>
+            <h4>Go to Running</h4>
+            <!-- <button type="button" class="btn btn-secondary btn-sm">delete</button> -->
+        </li>
+
+        <li class="task">
+            <h4>Read a book</h4>
+            <p class="visually-hidden">hgiogabsfigudfi</p>
+            <!-- <button type="button" class="btn btn-secondary btn-sm">delete</button> -->
+        </li>
+
+    </ul>
+</div>
 
 <body>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
     </script>
+    <script src="js/app2.js"></script>
 </body>
 
 </html>

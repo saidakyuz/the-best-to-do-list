@@ -36,6 +36,8 @@ ul li {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    list-style: none;
+    text-align: center;
 }
 
 
