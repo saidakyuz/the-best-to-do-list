@@ -2,13 +2,25 @@ const myInputTitle = document.getElementById("myInputText");
 const myInputBody = document.getElementById("myInputBody");
 const myList = document.getElementById("todos");
 
-// const listElement = document.querySelector('.task');
+const listElement = document.querySelector('.task');
+const listElementsBody = document.querySelector('.visually-hidden');
+listElement.addEventListener("click", e => {
+    e.preventDefault();
+    console.log(e);
+    if (listElementsBody.style.visibility === "hidden") {
+        listElementsBody.style.visibility = "display";
+        console.log("hi");
+    } else {
+        listElementsBody.style.visibility = "hidden";
+        console.log("hi2");
+    }
 
-cln.querySelector('.task').innerHTML = create.querySelector('.task').value;
-todo.appendChild(cln);
+});
+
 
 // how to visualize our tasks on html?
-// 
+// how to get event hanler?
+// eventListener
 
 class ToDo {
     constructor(topic, text) {

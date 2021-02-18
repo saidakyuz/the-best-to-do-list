@@ -147,3 +147,14 @@ input {
 .addBtn:hover {
     background-color: #bbb;
 }
+
+
+/* Said */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2em;
+    margin: 2em;
+}
