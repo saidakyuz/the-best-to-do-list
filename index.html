@@ -1,53 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <title>To do List</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <title>Document</title>
 </head>
-<div id="myDIV" class="header">
-    <h2>My To Do List</h2>
-    <input type="text" id="myInputText" placeholder="Title...">
-    <span onclick="newElement()" class="addBtn">Add List</span>
-    <h2>My To Do List</h2>
-    <input type="text" id="myInputBody" placeholder="Title...">
-    <span onclick="newElement()" class="addBtn">Add List</span>
-</div>
-
-
-<div class="container col-6">
-    <ul id="todos">
-        <li>
-            <h4>Go to Supemarket</h4>
-            <!--<button type="button" class="btn btn-secondary btn-sm">Go to Supemarket</button>-->
-        </li>
-        <li>
-            <h4>Organize the Apartment</h4>
-            <!-- <button type="button" class="btn btn-secondary btn-sm">delete</button> -->
-        </li>
-        <li>
-            <h4>Go to Running</h4>
-            <!-- <button type="button" class="btn btn-secondary btn-sm">delete</button> -->
-        </li>
-
-        <li class="task">
-            <h4>Read a book</h4>
-            <p class="visually-hidden">hgiogabsfigudfi</p>
-            <!-- <button type="button" class="btn btn-secondary btn-sm">delete</button> -->
-        </li>
-
-    </ul>
-</div>
-
 <body>
+  <header class="mb-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <div class="card">
+            <div class="card-body bg-primary text-center">
+              This is my to do list
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <div class="card">
+          <div class="card-body" id="list">
+            This is some text within a card body.
+          </div>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="card">
+          <div class="card-body" id="details">
+            <img class="w-100" src="/MadDog.jpg" alt="stressed dog">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
-    </script>
-    <script src="js/app2.js"></script>
+  <footer class="mt-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <div class="card">
+            <div class="card-body bg-primary text-center">
+              All rights reserved
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+<script src="/js/app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
 </body>
-
 </html>
